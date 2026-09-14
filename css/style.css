@@ -1,0 +1,198 @@
+/* =========================
+   Grundlegendes Layout
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #1b1a17;
+    color: #e8e2d4;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Container
+   ========================= */
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+.site-header {
+    background: #24211c;
+    border-bottom: 2px solid #6e5c3c;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #d8b56c;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: #aaa18e;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   Startseite
+   ========================= */
+
+.intro {
+    background: #24211c;
+    border: 1px solid #403929;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.intro h2 {
+    margin-top: 0;
+    color: #d8b56c;
+}
+
+
+/* =========================
+   Kategorie-Karten
+   ========================= */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.category-card {
+    display: block;
+
+    padding: 25px;
+
+    background: #24211c;
+    border: 1px solid #403929;
+    border-radius: 8px;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #a48a52;
+    background: #2b2821;
+}
+
+.category-card h3 {
+    margin-top: 0;
+    color: #d8b56c;
+}
+
+.category-card p {
+    color: #aaa18e;
+}
+
+
+/* =========================
+   Unterseiten
+   ========================= */
+
+.content-section {
+    margin-bottom: 45px;
+}
+
+.content-section h2 {
+    color: #d8b56c;
+    border-bottom: 1px solid #403929;
+    padding-bottom: 8px;
+}
+
+.content-section h3 {
+    color: #c9b47c;
+}
+
+
+/* =========================
+   Navigation / Breadcrumb
+   ========================= */
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #c9b47c;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Listen
+   ========================= */
+
+li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    margin-top: 80px;
+    padding: 25px 0;
+
+    background: #141310;
+    border-top: 1px solid #403929;
+
+    color: #777262;
+    text-align: center;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
