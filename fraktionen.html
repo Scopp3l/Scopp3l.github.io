@@ -39,7 +39,24 @@
 
 	<section class="content-section">
 		
-	<zero-md src="fraktionen/test.md"></zero-md>
+	<zero-md src="fraktionen/test.md">
+        <!-- This template safely injects styles inside the Shadow DOM -->
+        <template>
+            <!-- Link your stylesheet here so zero-md can use it -->
+            <link rel="stylesheet" href="css/style.css">
+            
+            <!-- Optional: Add custom CSS overrides specifically for markdown content -->
+            <style>
+                :host {
+                    display: block;
+                    /* Add any container-level styles if needed */
+                }
+                body {
+                    font-family: inherit;
+                }
+            </style>
+        </template>
+    </zero-md>
 
     </section>
 </main>
