@@ -1,3 +1,4 @@
-# Das Imperium 
-Das Imperium hat ist eine magische Hochkultur, dessen Herrscher der Sonnengott Lathander ist. Für mehr Detail, klicke [hier.](imperium.md)
-
+{include} imperium.md
+# Die Residenz im Sumpf
+Ihr wisst nicht viel über die. 
+{include} goblins.md
